@@ -13,11 +13,11 @@ const FilePicker = ({ file, setFile, readFile }) => {
           onChange={(e) => setFile(e.target.files[0])}
         />
         <label htmlFor="file-upload" className="filepicker-label">
-          Upload File
+          Upload bestand
         </label>
 
         <p className="mt-2 text-gray-500 text-xs truncate">
-          {file === "" ? "No file selected" : file.name}
+          {file === "" ? "Geen bestand geselecteerd" : file.name}
         </p>
       </div>
 
@@ -30,7 +30,7 @@ const FilePicker = ({ file, setFile, readFile }) => {
         />
         <CustomButton
           type="filled"
-          title="Full"
+          title="Volledig"
           handleClick={() => readFile("full")}
           customStyles="text-xs"
         />
